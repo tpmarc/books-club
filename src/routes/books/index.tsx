@@ -15,6 +15,7 @@ const Books: FunctionalComponent = () => {
   const dispatch = useDispatch()
   const books = useSelector<RootState, BookModel[]>(selectAllBooksSelector)
   const totalBooks = useSelector<RootState, number>(selectTotalBooksSelector)
+
   const formRef = useRef<HTMLFormElement>()
   const inputRef = useRef<HTMLInputElement>()
 
